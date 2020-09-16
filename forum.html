@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 51</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  
+<nav class='nav'>
+  <div class='container'>
+    <a class='nav-item nav-brand' href='index.html'>Company</a>
+    <button class='toggler'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class='nav-collapse'>
+      <a class='nav-item nav-link' href='index.html'>Introduction</a>
+      <a class='nav-item nav-link' href='evrange.html'>EV Range</a>
+      <a class='nav-item nav-link' href='forum.html'>ClassifiedForum</a>
+      <a class='nav-item nav-link' href='location.html'>Location</a>
+    </div>
+  </div>
+</nav>
+  <!-- Nav Section End -->
+  <!-- Nav Section End -->
+
+
+<!-- Vehicles Content -->
+
+<section id="vehiclesContent" class="EvCont">
+  <div class="wrapper">
+  <div class="ContentVehicles">
+    <h3 class="mid"> 
+     <blockquote>
+       Buying or Selling an EV? Why not post an advert below in our forum section
+     </blockquote>
+    </h3> <hr/>
+
+    <div class="FormForum">
+    	<form id="contact" action="" method="post">
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+
+    <fieldset>
+    	<input type="radio" name="buysell" value="Buying" id="buying"> 
+    	<label for="buying">Buying</label>
+    	<input type="radio" name="buysell" value="Selling" id="selling"> 
+    	<label for="selling">Selling</label>
+    </fieldset>
+
+    <fieldset>
+      <textarea placeholder="Tell us what you are looking for or selling?" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+    </div>
+
+  </div>
+  </div>
+</section>
+<!-- End -->
+  
+
+<footer>
+ <div class="wrapper">
+  <p>
+    copyright &copy; 2020 By Company Name. All Right Reserved.
+  </p>
+ </div>
+</footer>
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('.toggler').onclick = () => {
+  document.querySelector('.nav').classList.toggle('open');
+}
+</script>s
+</body>
+</html>

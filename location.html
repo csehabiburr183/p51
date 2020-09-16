@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 51</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  
+<nav class='nav'>
+  <div class='container'>
+    <a class='nav-item nav-brand' href='index.html'>Company</a>
+    <button class='toggler'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class='nav-collapse'>
+      <a class='nav-item nav-link' href='index.html'>Introduction</a>
+      <a class='nav-item nav-link' href='evrange.html'>EV Range</a>
+      <a class='nav-item nav-link' href='forum.html'>ClassifiedForum</a>
+      <a class='nav-item nav-link' href='location.html'>Location</a>
+    </div>
+  </div>
+</nav>
+  <!-- Nav Section End -->
+  <!-- Nav Section End -->
+
+
+<!-- Vehicles Content -->
+
+<section id="vehiclesContent" class="EvCont">
+  <div class="wrapper">
+  <div class="ContentVehicles">
+    <h3 class="mid"> 
+     <blockquote>
+       Charge your EV with our extensive charging network
+     </blockquote>
+    </h3> <hr/>
+
+    <p class="mid">
+      Find available charge stations
+    </p> 
+
+    <h2 class="CarCls mid"> Over 150 charge points on the Active Charge network on the below Live Map </h2><hr/>
+
+   <center>
+      <img src="images/arrow-down.svg" alt="" class="locationArr">
+   </center>
+
+   <iframe src="https://www.chargestations.co.za/ChargeMap.aspx?UserGroupID=facf9751-58ca-490f-8ca5-d2b433e6b2e5" title="W3Schools Free Online Web Tutorials" width="100%" height="400px"></iframe>
+
+  </div>
+  </div>
+</section>
+<!-- End -->
+  
+
+<footer>
+ <div class="wrapper">
+  <p>
+    copyright &copy; 2020 By Company Name. All Right Reserved.
+  </p>
+ </div>
+</footer>
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('.toggler').onclick = () => {
+  document.querySelector('.nav').classList.toggle('open');
+}
+</script>s
+</body>
+</html>

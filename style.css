@@ -1,0 +1,334 @@
+/*Custom Made CSS*/
+
+*{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width:1100px;
+}
+/* Initial Code End */
+
+
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.nav {
+  border-bottom: 1px solid #3e3e3ed1;
+  background: #000;
+  width: 100%;
+  height: 55px;
+  overflow: hidden;
+  transition: height .5s ease-in-out;
+}
+.nav-brand, .nav-link, .nav-collapse {
+  display: inline-block;
+}
+.nav-brand, .nav-link {
+  color: #fff;
+  text-decoration: none;
+  line-height: 55px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.nav-brand {
+  font-size: 1.25rem;
+}
+.nav-link {
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+    background: red;
+}
+.nav-collapse {
+  float: right;
+}
+.toggler {
+  float: right;
+  width: 40px;
+  height: 18px;
+  margin: 18.5px 0;
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  opacity: 0.8;
+}
+.toggler span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: relative;
+  transition: .25s ease-in-out;
+}
+.toggler span:nth-child(1) {
+  top: -7.5px;
+}
+.toggler span:nth-child(2) {
+  top: 0;
+}
+.toggler span:nth-child(3) {
+  top: 7.5px;
+}
+
+.nav-brand:hover, .nav-link:hover, .toggler:hover, 
+.nav-brand:focus, .nav-link:focus, .toggler:focus {
+  opacity: 1;
+}
+
+.nav.open .toggler span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+.nav.open .toggler span:nth-child(2) {
+  transform: translateX(-100%);
+  width: 0;
+  opacity: 0;
+}
+.nav.open .toggler span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+.nav.open {
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .nav-collapse, .nav-link {
+    float: none;
+    display: block;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .toggler {
+    display: block;
+  }
+}
+
+
+
+section#Vehicles {
+    background: linear-gradient(45deg, #0000009e, #000000bd),url(images/vehiclesbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 140px 0px;
+}
+
+
+section#Vehicles h1 {
+    font-size: 45px;
+}
+
+section#Vehicles p {
+    line-height: 35px;
+    padding-top: 20px;
+}
+
+.vehiclesContent {
+    width: 640px;
+    border: 5px solid red;
+    padding: 15px;
+}
+
+.ContentVehicles {
+    padding: 40px 0px;
+    text-align: justify;
+}
+
+.ContentVehicles p {
+    padding: 20px 0px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.ContentVehicles h5 {
+    font-size: 25px;
+}
+
+img#evsimg {
+    width: 750px;
+    border-radius: 5px;
+    border: 5px solid #f1f1f1;
+    box-shadow: 0px 2px 8px #61892F;
+    margin-top: 30px;
+}
+
+.ContentVehicles h4 {
+    color: #86C232;
+}
+
+.ContentVehicles h5 {
+    color: #99de38;
+}
+
+
+
+
+/*evRange Page */
+
+.EvCont {
+    border-top: 2px solid #ff000026;
+}
+
+blockquote {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+h2.CarCls {
+    background: #f3f3f3b8;
+    color: #86C232;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h2.modelCar {
+    color: red;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+
+
+/* Location */
+.mid{
+  text-align: center;
+}
+
+img.locationArr {
+    height: 120px;
+    padding: 20px 0px;
+}
+
+
+
+/*forum Code  */
+
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 40px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+/*forum code end*/
+
+
+/* Footer */
+footer {
+    background: #efefef;
+    padding: 15px;
+    text-align: center;
+}
